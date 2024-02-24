@@ -1,0 +1,11 @@
+Sec_num=3
+i=3
+while (i!=0):
+    i=i-1
+    a=int(input("Enter a number : "))
+    if Sec_num==a:
+        print("Right guess")
+        break
+    else:
+        print ("Wrong guess try again, attempts left ",i)
+    print ("Out of attempts")
