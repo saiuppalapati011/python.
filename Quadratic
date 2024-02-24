@@ -1,0 +1,22 @@
+import math
+def root (a,b,c):
+
+  discriminant = b**2 - 4 * a * c
+
+  if discriminant < 0:
+    return None
+
+  root1 = (-b + math.sqrt(discriminant)) / (2 * a)
+  root2 = (-b - math.sqrt(discriminant)) / (2 * a)
+
+  return root1, root2
+
+a=int(input("enter the cooficient of x^2"))
+b=int(input("enter the cofficient of x"))
+c=int(input("eneter the consta value of equation"))
+roots = root(a, b, c)
+
+if roots is not None:
+  print("The roots of the equation are:", roots[0], roots[1])
+else:
+  print("The equation has no real roots.")
