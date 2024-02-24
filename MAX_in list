@@ -1,0 +1,14 @@
+def find_max(mylist):
+    key = -9231412
+    for i in range(0, len(mylist)):
+        if mylist[i] > key:
+            key = mylist[i]
+    return key
+
+mylistt = []
+for i in range(0, 10):
+    num = int(input("Enter the number: "))
+    mylistt.append(num)
+
+max_value = find_max(mylistt)
+print("The max value is:", max_value)
