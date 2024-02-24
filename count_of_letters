@@ -1,0 +1,21 @@
+# wap that take sentance as input and return a dictonary with a count of letters in each word
+def count_total_letters(sentence):
+    letter_count = {}
+    current_word = ""
+    current_letter_count = 0
+    for char in sentence:
+        if char.isalpha():
+            current_letter_count += 1 
+        elif current_letter_count > 0: 
+            letter_count[current_word] = current_letter_count
+            current_word = ""
+            current_letter_count = 0
+        else:
+            continue
+        current_word += char.lower()
+    if current_letter_count > 0:
+        letter_count[current_word] = current_letter_count
+
+    return letter_count
+sentence = input("Enter a sentence: ")
+print(count_total_letters(sentence))
