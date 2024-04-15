@@ -1,0 +1,399 @@
+import openpyxl
+from openpyxl import Workbook, load_workbook
+def OptionChecker(option) :
+    if (option=="1"or option=="2"or option=="3"or option=="4") :
+        return 1
+    else :
+        return 0
+def py():
+    marks_count=0
+    print("1.What does the input() function do in Python?")
+    print("   1. Prints output to the console")
+    print("   2. Reads input from the user")
+    print("   3. Generates random numbers")
+    print("   4. Executes system commands")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="2":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("2.In Python, how do you start writing a loop block?")
+    print("   1.Using 'do'")
+    print("   2.Using 'for'")
+    print("   3.Using 'loop'")
+    print("   4.Using 'begin'")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="2":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("3.Which of the following statements is true about Python indentation?")
+    print("   1.It's optional for readability")
+    print("   2. It's used only for comments")
+    print("   3.It's mandatory for the syntax")
+    print("   4. It's used for defining classes only")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="3":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("4.How do you define a list in Python?")
+    print("   1.Using {}")
+    print("   2.Using ()")
+    print("   3. Using []")
+    print("   4.Using //")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="3":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("5.Which of the following is used to perform floor division in Python?")
+    print("   1.%")
+    print("   2.**")
+    print("   3. /")
+    print("   4.//")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="4":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("Test ended, Your total score is : ",marks_count)
+    print("Thank You!")
+    return marks_count
+def dsa():
+    marks_count=0
+    print("1.What is the purpose of a data structure in computer science?")
+    print("   1.To store and organize data efficiently")
+    print("   2.To perform mathematical operations")
+    print("   3.To execute system commands")
+    print("   4.To create user interfaces")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="1":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("2.Which of the following is not a common operation performed on a stack?")
+    print("   1.Push")
+    print("   2.Pop")
+    print("   3.Peek")
+    print("   4.Merge")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="4":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("3.What is the primary goal of algorithm analysis?")
+    print("   1.To minimize the number of steps in an algorithm")
+    print("   2.To maximize the use of data structures")
+    print("   3.To minimize the space complexity of an algorithm")
+    print("   4.To evaluate the efficiency of an algorithm in terms of time and space")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="4":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("4.In a linked list, what is the reference to the next node of the current node called?")
+    print("   1.Pointer")
+    print("   2.Index")
+    print("   3.Link")
+    print("   4.Element")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="1":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("5.What is the time complexity of searching an element in a sorted array using Binary Search?")
+    print("   1.O(1)")
+    print("   2.O(log n)")
+    print("   3.O(n)")
+    print("   4.O(n log n)")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="2":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("Test ended, Your total score is : ",marks_count)
+    print("Thank You!")
+    return marks_count
+def coa():
+    marks_count=0
+    print("1.What is the purpose of the clock in a computer system?")
+    print("   1.To regulate the speed of the CPU")
+    print("   2.To display the time")
+    print("   3.To control input devices")
+    print("   4.To manage network connections")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="1":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("2.Which of the following is not a part of the Von Neumann architecture?")
+    print("   1.Control Unit")
+    print("   2.ALU (Arithmetic Logic Unit)")
+    print("   3.Cache Memory")
+    print("   4.Memory")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="3":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("3.What is the primary function of the control unit in a CPU??")
+    print("   1.Performs arithmetic operations")
+    print("   2.Stores data temporarily")
+    print("   3.Executes instructions and coordinates the activities of other units")
+    print("   4.Manages input and output devices")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="3":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("4.What is the role of the bus in a computer system?")
+    print("   1.To process instructions")
+    print("   2.To store data temporarily")
+    print("   3.To perform arithmetic operations")
+    print("   4.To connect different components and allow communication between them")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="4":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("5.Which of the following is an example of a volatile memory??")
+    print("   1.ROM (Read-Only Memory)")
+    print("   2.HDD (Hard Disk Drive)")
+    print("   3.SSD (Solid State Drive)")
+    print("   4.RAM (Random Access Memory)")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="3":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("Test ended, Your total score is : ",marks_count)
+    print("Thank You!")
+    return marks_count
+def de():
+    marks_count=0
+    print("1.Which logic gate is also known as an inverter?")
+    print("   1.AND gate")
+    print("   2.OR gate")
+    print("   3.XOR gate")
+    print("   4.NOT gate")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="4":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("2.What is the purpose of a flip-flop in digital circuits?")
+    print("   1.To perform addition")
+    print("   2.To store binary data")
+    print("   3.To generate clock signals")
+    print("   4.To convert analog signals to digital signals")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="2":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("3.Which logic gate output is high when any of its inputs are high?")
+    print("   1.AND gate")
+    print("   2.OR gate")
+    print("   3.XOR gate")
+    print("   4.NOT gate")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="2":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("4.What is the binary equivalent of the decimal number 10?")
+    print("   1.1000")
+    print("   2.1010")
+    print("   3.1100")
+    print("   4.1110")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="2":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("5.What is the Boolean expression for the AND gate??")
+    print("   1.A+B")
+    print("   2.A/B")
+    print("   3.A-B")
+    print("   4.A*B")
+    ANS=input("please select your option:  ")
+    if OptionChecker(ANS)==0:
+        while(OptionChecker(ANS)==0):
+            print ("invalid option selected please retry")
+            ANS=input("please re-select your option:  ")
+    if ANS=="4":
+        marks_count+=2
+    else :
+        marks_count+=-1
+    print("Test ended, Your total score is : ",marks_count)
+    print("Thank You!")
+    return marks_count
+book=load_workbook('MARK SHEET.xlsx')
+sheet=book.active
+print ("Welcome to class test!")
+print("Please take a look at the rules :")
+print("1.The test will be a MCQ based with a single correct answer")
+print("2.There will be no time limit.")
+print("3.You can attemt the test for python,DSA,COA and DE")
+print("4.Every subject has 5 questions and +2 mark will be alloted for correct answer \nand -1 for a wrong answer.")
+attempt =input("Do you want to attempt the test now? ")
+if attempt.lower() != "yes" :
+    print("Okay then, see you later")
+    quit()
+subject = input ("Please select the subject : \n1.Python\n2.DSA\n3.COA\n4.DE\n")
+if OptionChecker(subject)==0:
+    while(OptionChecker(subject)==0):
+      print ("invalid option selected please retry")
+      subject = input ("Please select the subject : \n1.Python\n2.DSA\n3.COA\n4.DE\n")  
+sapid = input ("Please enter your SAPID to proceed further : ")
+total_score=0
+coloumn=2
+row=chr(int(65)+int(subject))
+cell='A'+str(coloumn)
+while(sheet[cell].value is not None) :
+    coloumn+=1
+    cell='A'+str(coloumn)
+temp=0
+for coloumn in range (2,coloumn):
+    mystr='A'
+    if (sheet[mystr+str(coloumn)].value==sapid):
+        maincol=coloumn
+        temp=1
+print(coloumn)
+if subject=="1" :
+    if (temp==0) :
+        if sheet["B"+str(coloumn)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=py()
+    else :
+        if sheet["B"+str(maincol)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=py()
+elif subject=="2":
+    if (temp==0) :
+        if sheet["C"+str(coloumn)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=dsa()
+    else :
+        if sheet["C"+str(maincol)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=dsa()
+elif subject=="3":
+    if (temp==0) :
+        if sheet["D"+str(coloumn)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=coa()
+    else :
+        if sheet["D"+str(maincol)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=coa()
+elif subject=="4":
+    if (temp==0) :
+        if sheet["E"+str(coloumn)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=de()
+    else :
+        if sheet["E"+str(maincol)].value is not None :
+            print ("Sorry you have already attempted this subject, please try another subject")
+            quit()
+        else:
+            total_score=de()
+if temp==1 :
+    sheet['A'+str(maincol)].value=sapid
+    sheet[row+str(maincol)].value=total_score
+    book.save('MARK SHEET.xlsx')
+else :
+    sheet['A'+str(coloumn)].value=sapid
+    sheet[row+str(coloumn)].value=total_score
+    book.save('MARK SHEET.xlsx')
