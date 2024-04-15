@@ -1,0 +1,20 @@
+# Correct code
+class Shape:
+  def __init__(self):
+    print("I am in Shape Class!")
+  def area(self):
+    return 0
+
+class Square(Shape):
+  def __init__(self,length):
+    self.l=length
+    print("Welcome! I am in Square class!")
+  def area(self):
+    print(self.l*self.l)
+
+S1=Shape()
+print("Area by default:",S1.area())
+n=int(input("Enter length of the square:"))
+A2=Square(n)
+A2.area()
+
