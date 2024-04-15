@@ -1,0 +1,20 @@
+#Write a program to create a rectangle class that consists of two methods or functions.
+class Rectangle:
+  def __init__(self,l,b):
+    self.l=l
+    self.b=b
+    self.p=self.Inner()
+  def Area(self):
+    print("The Area of the Rectangle is:",self.l*self.b)
+  class Inner:
+    def __init__(self):
+      self.l=l
+      self.b=b
+    def perimeter(self):
+      print("The perimeter of the Rectangle is:",2*(self.l+self.b))
+
+l=int(input("Enter length:"))
+b=int(input("Enter breadth:"))
+R1=Rectangle(l,b)
+R1.Area()
+R1.p.perimeter()
