@@ -1,0 +1,21 @@
+#Create two classes for the same object. The Class is student, the second class is member.You have to pass student details.
+#Print the results from both classes using only a single object.
+class student:
+  def __init__(self,name,ID):
+    self.n=name
+    self.I=ID
+    self.m=self.member()
+  def details(self):
+    print("Name:",self.n)
+    print("Sap ID:",self.I)
+  class member:
+    def __init__(self):
+      self.club="Football association of UPES"
+      self.year=1998
+    def club_details(self):
+      print("Club:",self.club)
+      print("Year established:",self.year)
+
+S1=student("Brishav",1988)
+S1.details()
+S1.m.club_details()
