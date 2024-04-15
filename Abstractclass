@@ -1,0 +1,31 @@
+#Abstract Class
+import abc
+from abc import ABC,abstractmethod
+class Employee:                    #Cannot make instances of classes having abstract methods
+  @abstractmethod
+  def sapID(self):
+    pass
+  @abstractmethod
+  def email(self):
+    pass
+  def name(self,name):
+    print("My Name")
+
+class Professor(Employee):
+  def __init__(self,sapid,email):
+    self.id=sapid
+    self.email=email
+  def sapID(self):
+    print("Sap ID:",self.id)
+  def iemail(self):
+    print("Email:",self.email)
+  def iname(self,name):
+    self.name=name
+    print("Name:",self.name)
+S=int(input("Enter ID:"))
+E=input("Enter email:")
+N=input("Enter name:")
+P1=Professor(S, E)
+P1.iname(N)
+P1.sapID()
+P1.iemail()
