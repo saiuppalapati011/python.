@@ -1,0 +1,36 @@
+class Fruit:
+  def taste(self):
+    pass
+
+  def color(self):
+    pass
+
+  def richness(self):
+    pass
+
+
+class Mango(Fruit):
+  def taste(self):
+    print("Taste of mangoes in summer is awwesomee!")
+  def color(self):
+    print("Mangoes are generally yellow in color!")
+  def richness(self):
+    print("Mangoes are rich in vitamin A.")
+
+
+class Papaya(Fruit):
+  def taste(self):
+    print("Taste of Papaya in summer is magic!")
+  def color(self):
+    print("Papayas are generally yellow in color!")
+  def richness(self):
+    print("Papayas are rich in magnesium.")
+
+
+class Apple(Fruit):
+  def taste(self):
+    print("Taste of Apples in summer is Wow!")
+  def color(self):
+    print("Apples are generally red in color!")
+  def richness(self):
+    print("Apples are rich in magnesium.")
