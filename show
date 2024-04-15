@@ -1,0 +1,7 @@
+class D:
+  def __init__(self):
+    print("I am inside init of D")
+  def show(self):
+    print("show of D")
+  def show2(self):
+    print("show2 of D")
