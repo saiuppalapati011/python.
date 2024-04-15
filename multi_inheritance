@@ -1,0 +1,27 @@
+class G:
+  def __init__(self):
+    print("I am inside init of G")
+  def showG1(self):
+    print("show of G")
+  def showG2(self):
+    print("show2 of G")
+
+
+
+class H:
+  def __init__(self):
+    print("I am inside init of H")
+  def showH1(self):
+    print("show of H")
+  def show2H2(self):
+    print("show2 of H")
+
+
+
+class I(G,H):
+  def __init__(self):
+    print("I am inside init of I")
+  def shoI1(self):
+    print("show of I")
+  def showI2(self):
+    print("show2 of I")
